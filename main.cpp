@@ -13,7 +13,6 @@ int main(void) {
     return -1;
   }
   glfwMakeContextCurrent(window);
-
   while (!glfwWindowShouldClose(window)) {
     glClear(GL_COLOR_BUFFER_BIT);
 
