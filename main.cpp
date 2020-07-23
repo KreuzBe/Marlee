@@ -41,14 +41,14 @@ void main()
     return -1;
 
   float vertices[] = {
-      -0.5f, -0.5f,
-      0.0f, //
-      0.5f,  -0.5f,
-      0.0f, //
-      0.0f,  0.5f,
-      0.0f //
-           //
-
+      // first triangle
+      0.5f, 0.5f, 0.0f,  // top right
+      0.5f, -0.5f, 0.0f, // bottom right
+      -0.5f, 0.5f, 0.0f, // top left
+      // second triangle //TODO Not working do EBO
+      0.5f, -0.5f, 0.0f,  // bottom right
+      -0.5f, -0.5f, 0.0f, // bottom left
+      -0.5f, 0.5f, 0.0f   // top left
   };
 
   unsigned int VBO;
