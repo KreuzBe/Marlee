@@ -24,7 +24,8 @@ set_target_properties(GLEW PROPERTIES
         INTERFACE_INCLUDE_DIRECTORIES "${PROJECT_BINARY_DIR}/glew_download-prefix/src/glew_download/include/")
 
 
-add_executable(Marlee main.cpp)
+
+add_executable(Marlee main.cpp Shader.h)
 add_dependencies(Marlee GLEW glew_download)
 target_link_libraries(Marlee glfw GLEW OpenGL::GL)
 
